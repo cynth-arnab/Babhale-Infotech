@@ -3,71 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cats+Dogs! by Arnab</title>
+    <title>Cats vs. Dogs by Arnab</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
             background-image: url(bg.jpg);
-        }
-        .header {
-            background-color: #09ff00;
+            color: #333;
+            margin: 0;
+            padding: 0;
             text-align: center;
+        }
+        header {
+            text-align: center;
+            align-self: center;
+            background-color: #ffffff;
             padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .footer {
-            background-color: #09ff00;
+        h1 {
             text-align: center;
-            padding: 20px  auto;
-            margin-top: 24px;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .content {
+            text-align: center;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .subheading {
             font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
         }
-        .date {
-            color: #ffffff;
-            margin: 20px auto;
-            text-transform: uppercase;
+        p {
+            line-height: 1.6;
+            font-size: 18px;
+            text-align: left;
         }
-        .header nav {
-            display: flex;              
-            justify-content: space-evenly;
-            align-items: center;        
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #007BFF;
         }
-        .header nav a {
-            text-decoration: none;     
-            color: black;               
-            font-size: 20px;           
-            padding: 5px 10px;          
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #f1f1f1;
+            padding: 15px;
+            font-size: 16px;
+            margin-top: 40px;
         }
     </style>
 </head>
-
 <body>
-    <header class="header">
+
+    <header>
+        <h1>Cats vs. Dogs</h1>
+        <p>A Playful Comparison of Domestic Pets & Operating Systems</p>
     </header>
-        <h1>The weird domestic creature</h1>
-        <h2>Cats - (The UNIX/Linux Approach)
 
-            Independent, self-sufficient, and expect you to adapt to them.
-            They operate on a zero-trust model—everything is a security risk until proven otherwise.
-            Error logs are hidden; if something goes wrong, good luck debugging.
-            Silent, efficient, and mysterious—only showing affection on their own terms.
-            System updates are unpredictable—sometimes they work smoothly, sometimes they crash into walls at 3 AM.</h2>
-<img src="cat.jpg" height="400" width="500">
-            <a href="cats.html">More About Cats!</a>
-            <h1>The non-weird domestic creature</h1>
-        <h2>Dogs - (The Windows Approach)
+    <div class="content">
+        <h2 class="subheading">Cats – (The UNIX/Linux Approach)</h2>
+        <p>
+            Independent, self-sufficient, and expect you to adapt to them.<br>
+            They operate on a zero-trust model—everything is a security risk until proven otherwise.<br>
+            Error logs are hidden; if something goes wrong, good luck debugging.<br>
+            Silent, efficient, and mysterious—only showing affection on their own terms.<br>
+            System updates are unpredictable—sometimes they work smoothly, sometimes they crash into walls at 3 AM.
+        </p>
+        <img src="cat.jpg" alt="Cat">
+        <a href="cats.html">More About Cats</a>
+    </div>
 
-            User-friendly, enthusiastic, and built for interaction.
-            Full-trust model—they’ll run any command you give them, even if it’s "chase your own tail."
-            If something breaks, they notify you immediately (usually by barking).
-            Always available, always ready to serve, even if it means rebooting at inconvenient times (zoomies).
-            System logs are open and verbose—happiness, sadness, hunger, all clearly communicated.</h2>
-            <img src="dog.jpg" height="400" width="500">
-            <a href="dogs.html">More About Dogs!</a>
+    <div class="content">
+        <h2 class="subheading">Dogs – (The Windows Approach)</h2>
+        <p>
+            User-friendly, enthusiastic, and built for interaction.<br>
+            Full-trust model—they’ll run any command you give them, even if it’s "chase your own tail."<br>
+            If something breaks, they notify you immediately (usually by barking).<br>
+            Always available, always ready to serve, even if it means rebooting at inconvenient times (zoomies).<br>
+            System logs are open and verbose—happiness, sadness, hunger, all clearly communicated.
+        </p>
+        <img src="dog.jpg" alt="Dog">
+        <a href="dogs.html">More About Dogs</a>
     </div>
-    <div>
-    </div>
-    <footer class="footer">
-        <p>Neonpedia</p>
+
+    <footer>
+        <p>&copy; 2025 - Written by Arnab | Neonpedia</p>
     </footer>
+
 </body>
 </html>
