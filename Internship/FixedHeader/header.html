@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Header</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        .fixed-header {
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            margin-top: 90px; 
+            padding: 30px;
+        }
+
+        .content {
+            height: 150vh; 
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed-header">
+        <h1>Fixed Header</h1>
+    </header>
+
+    <main>
+        <div class="content">
+            <h5>THE END IS NEVER THE END</h5>
+        </div>
+    </main>
+</body>
+</html>

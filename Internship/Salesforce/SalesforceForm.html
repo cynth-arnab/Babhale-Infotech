@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Signup</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+    <div class="container">
+        <img src="Salesforce-Emblem.png" alt="Salesforce Logo" class="logo">
+        
+        <h1>Sign up for your Salesforce Developer Edition</h1>
+        <p class="subtitle">A Salesforce Platform environment for free.</p>
+
+        <div class="info-box">
+            Complete the form to get access to the Salesforce Developer Edition.
+        </div>
+
+        <form>
+            <div class="row">
+                <div class="form-group">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" placeholder="Your first name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" id="last-name" placeholder="Your last name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="Your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="role">Role*</label>
+                <select id="role" required>
+                    <option value="" disabled selected>Select your job role</option>
+                    <option>Developer</option>
+                    <option>Architect/CTO</option>
+                    <option>Administrator</option>
+                    <option>IT Manager/Executive</option>
+                    <option>Business Manager/Executive</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company*</label>
+                <input type="text" id="company" placeholder="Company Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country/Region*</label>
+                <select id="country" required>
+                    <option value="" disabled selected>Select Region</option>
+                    <option>India</option>
+                    <option>Japan</option>
+                    <option>Canada</option>
+                    <option>United Kingdom</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pincode">Postal Code</label>
+                <input type="text" id="pincode" placeholder="Postal code">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username*</label>
+                <input type="text" id="username" placeholder="cynth@arnab.parable" required>
+                <p class="info-text">
+                    Your username must be in the form of an email address (it does not have to be real). It must be unique and cannot be associated with another Salesforce login credential. 
+                    <a href="#">Read more about username recommendations.</a>
+                </p>
+            </div>
+
+            <div class="form-group agreement">
+                <input type="checkbox" id="agreement" required>
+                <label for="agreement">
+                    I agree to the <a href="#">Main Services Agreement - Developer Services</a> and 
+                    <a href="#">Salesforce Program Agreement</a>. <br> <br>
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Sign Up</button>
+
+            <p>Already have a Salesforce Developer Environment?</p>
+
+            <a href="#">Log in</a>
+        </form>
+    </div>
+
+</body>
+</html>

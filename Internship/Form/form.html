@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</Form></title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+    <h1>Register Here</h1>
+
+    <form>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <td><input type="text" name="firstName" required></td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td><input type="text" name="lastName" required></td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <th>Verify Password</th>
+                <td><input type="password" name="vPassword" required></td>
+            </tr>
+            <tr>
+                <th>Email Address</Address></th>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th>Mobile Number</th>
+                <td><input type="number" name="mobile" required></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><textarea name="address" rows="5" required></textarea></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="gender" value="male" id="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="female" id="other">
+                    <label for="other">Other</label>
+
+                </td>
+            </tr>
+            <tr>
+                <th>Select your hobbies</th>
+                <td>
+                    <input type="checkbox" name="hobbies[]" value="hobby1" id="hobby1">
+                    <label for="hobby1">Gaming</label>
+                    <input type="checkbox" name="hobbies[]" value="hobby2" id="hobby2">
+                    <label for="hobby2">Music</label>
+                    <input type="checkbox" name="hobbies[]" value="hobby3" id="hobby3">
+                    <label for="hobby3">Sports</label>
+                    <input type="checkbox" name="hobbies[]" value="hobby4" id="hobby4">
+                    <label for="hobby4">Reading</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td><input type="date" name="dob" placeholder="dd-mm-yyyy" required></td>
+            </tr>
+            <tr>
+                <th>Select Region</th>
+                <td>
+                    <select name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="usa">India</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Upload your image</th>
+                <td><input type="file" name="picture"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center-button">
+                    <input type="submit" value="Save My Data">
+                    <input type="reset" value="Reset Data">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: rgb(0, 140, 255);
+    background-image: url(cool.jpg);
+}
+
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+    text-decoration: overline underline;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bruh {
+    letter-spacing: 8px;
+    color: rgb(93, 43, 173);
+    font-style: italic;
+    background-color: rgb(255, 255, 255);
+}
+
+.bruh2 {
+    font-weight: bold;
+    color: blue;
+    background-color: lightblue;
+    letter-spacing: 20px;
+    text-align: center;
+}
+
+hr {
+    border: 10px solid grey;
+}
+
+/*this is the probably the cringiest thing i may have done" - Sun-Tzu*/
