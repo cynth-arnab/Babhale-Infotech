@@ -8,61 +8,93 @@
         body {
             font-family: 'Courier New', Courier, monospace;
             background-image: url(bg.jpg);
-        }
-        .header {
-            background-color: #09ff00;
+            color: #333;
+            margin: 0;
+            padding: 0;
             text-align: center;
+        }
+        header {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
             padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .footer {
-            background-color: #09ff00;
-            text-align: center;
-            padding: 20px  auto;
-            margin-top: 24px;
-            font-size: 20px;
+        .content img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin: 20px 0;
         }
         .date {
-            color: #ffffff;
-            margin: 20px auto;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
             text-transform: uppercase;
         }
-        .header nav {
-            display: flex;              
-            justify-content: space-evenly;
-            align-items: center;        
+        p {
+            line-height: 1.6;
+            font-size: 18px;
+            text-align: left;
         }
-        .header nav a {
-            text-decoration: none;     
-            color: black;               
-            font-size: 20px;           
-            padding: 5px 10px;          
+        footer {
+            background: #f1f1f1;
+            padding: 15px;
+            font-size: 16px;
+            margin-top: 40px;
         }
     </style>
 </head>
-
 <body>
-    <header class="header">
+
+    <header>
         <nav>
             <a href="Main.html">Home</a>
             <a href="cats.html">Cats</a>
         </nav>
     </header>
 
-    <div style="width:auto ; padding: auto;">
-        <div>
-            <p class="date">5 February 2007</p>
-        </div>
-        <img src="dog.jpg" alt="Dogs" height="400" width="500">
-        <h1>The non-weird domestic creature</h1>
-        <p>Dogs are like well-optimized, user-friendly programs—reliable, predictable, and always eager to execute commands. Their default mode is loyalty.exe, running on an infinite loop with a subroutine for tail-wagging and face-licking.</p>
+    <div class="content">
+        <p class="date">5 February 2025</p>
+        <img src="dog.jpg" alt="Dogs">
+        <h1>The Friendly Domestic Companion</h1>
+        <p>
+            Dogs are like well-optimized, user-friendly programs—reliable, predictable, and always eager to execute commands.
+            Their default mode is <strong>loyalty.exe</strong>, running in an infinite loop with a subroutine for tail-wagging and face-licking.
+        </p>
+        <p>
+            Unlike cats, dogs operate on a full-trust model—no authentication required. Walk in the door? Immediate access granted with maximum enthusiasm.
+            They also double as excellent error handlers—drop food on the floor, and they’ll promptly clean up the mess, no debugging needed.
+        </p>
+        <p>
+            If cats are UNIX systems (powerful but requiring expertise), dogs are like a well-designed GUI—intuitive, friendly, and always eager to help.
+            Their emotions are clear, their intentions transparent, and their enthusiasm permanently set to **100%**.
+        </p>
+    </div>
 
-        <p>Unlike cats, dogs operate on a full-trust model—no authentication required. Walk in the door? Immediate access granted with maximum enthusiasm. They are also excellent error handlers—drop food on the floor, and they’ll promptly clean up the mess, no questions asked.</p>
-        <p>In contrast to the cryptic nature of cats, dogs are open-source and well-documented—their emotions are clear, their intentions transparent, and their enthusiasm always at 100%. Basically, if cats are UNIX systems (powerful but demanding expertise), dogs are like a well-designed GUI—intuitive, friendly, and always eager to help.</p>
-    </div>
-    <div>
-    </div>
-    <footer class="footer">
-        <p>Neonpedia</p>
+    <footer>
+        <p>&copy; 2025 - Written by Arnab | Neonpedia</p>
     </footer>
+
 </body>
 </html>
