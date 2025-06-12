@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #f8f4f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #2c1b18;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3b2c27;
+    font-weight: 500;
+  }
+  
+  input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #3b2c27;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  button:hover {
+    background-color: #5a4036;
+  }
+  
+  .toggle-text {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #555;
+  }
+  
+  .toggle-text span {
+    color: #3b2c27;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  #message {
+    text-align: center;
+    color: #a33;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
