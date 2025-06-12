@@ -1,0 +1,228 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #f1e6d3; /* Warmer aged parchment */
+  color: #5e1e26; /* Wine red */
+  font-size: 1.3rem;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  padding: 24px;
+}
+
+/* Container */
+div {
+  max-width: 1500px;
+  margin: auto;
+  padding: 28px;
+  background-color: #f7eee3;
+  border-radius: 12px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #ac1932; /* Gothic red/pink */
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 3.4rem;
+  text-align: center;
+  letter-spacing: 1.2px;
+  margin-bottom: 32px;
+}
+
+/* Links */
+a {
+  color: #ac1932;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5e1e26;
+  text-decoration: underline;
+}
+
+/* Thread List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f2eae2;
+  border-left: 4px solid #ac1932;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  color: #1c1c1c;
+}
+
+li:hover {
+  background-color: #e9e1d8;
+  border-color: #5e1e26;
+}
+
+/* Category Tags */
+.category-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-right: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ac1932;
+}
+
+/* Form */
+form {
+  background-color: #f8f4ec;
+  border: 1px solid #c6b3a6;
+  border-radius: 10px;
+  padding: 28px;
+  margin-bottom: 40px;
+  color: #1c1c1c;
+}
+
+form h3 {
+  color: #ac1932;
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #bfa8a0;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  background-color: #f7f2ea;
+  color: #1c1c1c;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #ac1932;
+  outline: none;
+}
+
+/* Form Button */
+form button {
+  background-color: #5e1e26;
+  color: #fff;
+  padding: 12px 22px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form button:hover {
+  background-color: #ac1932;
+}
+
+/* Replies */
+.reply {
+  background-color: #f0e6dd;
+  border-left: 4px solid #ac1932;
+  padding: 14px 16px;
+  margin: 14px 0;
+  font-size: 1rem;
+  border-radius: 6px;
+  color: #1c1c1c;
+}
+
+/* Labels & Dropdown */
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #5e1e26;
+}
+
+select {
+  background-color: #f5efe6;
+  border: 1px solid #bfa094;
+  color: #1c1c1c;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Layout */
+.main-layout {
+  display: flex;
+  gap: 30px;
+  padding: 24px;
+}
+
+.left-pane {
+  flex: 2;
+}
+
+.right-pane {
+  flex: 1;
+  background-color: #f5eee6;
+  border: 1px solid #ccb8ae;
+  border-radius: 10px;
+  padding: 22px;
+  color: #1c1c1c;
+}
+
+/* Thread Preview */
+.thread-preview-pane {
+  background-color: #f8f2e8;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #1c1c1c;
+}
+
+.thread-preview-pane h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #ac1932;
+}
+
+.thread-preview-pane .meta {
+  font-size: 0.9rem;
+  color: #5e1e26;
+  margin-bottom: 14px;
+}
+
+.thread-preview-pane.empty {
+  color: #5e1e26;
+  font-style: italic;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: 'Cormorant Garamond', serif;
+  color: #1c1c1c;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Cormorant Garamond', serif;
+  color: #ac1932;
+  font-size: 1.2rem;
+  opacity: 1;
+}
