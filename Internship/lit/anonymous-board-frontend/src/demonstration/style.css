@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #f6f0eb;
+    color: #2c1b18;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 4rem 1rem;
+  }
+  
+  .profile-container {
+    background-color: #fffdfc;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d8ccc2;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  header h2 {
+    font-size: 1.5rem;
+    color: #5c4033;
+    font-weight: 500;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-left: 4px solid #5c4033;
+    padding-left: 0.5rem;
+    color: #3a2720;
+  }
+  
+  .info-pair {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+  
+  .label {
+    font-weight: 600;
+    color: #3a2720;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px dashed #aaa;
+    margin: 2rem 0;
+  }
+  
+  .activity-overview ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.05rem;
+  }
+  
+  .activity-overview li {
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  .activity-overview li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    width: 6px;
+    height: 6px;
+    background-color: #5c4033;
+    border-radius: 50%;
+  }
+  
